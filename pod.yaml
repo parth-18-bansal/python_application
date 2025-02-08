@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: python-app-pod
+  labels: 
+    env: dev
+spec:
+  containers:
+  - name: python-app-container
+    image: python_application:1
+    ports:
+    - containerPort: 5000
+
+# apiVersion: v1
+# kind: Pod
+# metadata:
+#   name: nginx-pod
+#   labels:
+#     env: demo
+#     type: frontend
+# spec:
+#   containers:
+#   - name: nginx-container
+#     image: nginx
+#     ports:
+#     - containerPort: 80
