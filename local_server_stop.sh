@@ -9,3 +9,5 @@ fi
 
 # stop the nginx server
 sudo systemctl stop nginx
+
+echo "servers are stopped"
